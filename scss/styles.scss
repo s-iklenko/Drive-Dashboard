@@ -1,0 +1,41 @@
+// Shared styles
+@import "./variables";
+@import "./mixins";
+@import "./fonts";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, $color-dark 50%, $color-light 50%);
+    font-family: "Muli", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+    }
+}
+
+progress {
+    appearance: none;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+// Components
+@import "./navbar";
+@import "./content";
+@import "./widgets";
